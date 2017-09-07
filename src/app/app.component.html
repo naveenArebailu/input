@@ -1,0 +1,8 @@
+<h1>
+  My Page is {{title}}
+</h1>
+
+First Name: <input type="text" name="firstName" [(ngModel)]="firstName" #firstObjName/> <br/>
+Last Name: <input type="text" name="lastName" [(ngModel)]="lastName" #lastObjName/> <br/>
+<button (click)="getTitleNameValues(firstObjName.value,lastObjName.value)">Submit</button>
+<app-input [title]="title"></app-input>
